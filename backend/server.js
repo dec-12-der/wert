@@ -1,4 +1,4 @@
-import webpush from web-push;
+import webpush from 'web-push';
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
