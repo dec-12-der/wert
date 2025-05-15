@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import Fonoster from "@fonoster/sdk";
+import { SMSManager, CallManager } from "@fonoster/sdk";
 dotenv.config();
 
 const messagingClient =  new SMSManager();
