@@ -2,8 +2,8 @@ import dotenv from "dotenv";
 import Fonoster from "@fonoster/sdk";
 dotenv.config();
 
-const messagingClient = new Fonoster.Messaging();
-const voiceClient = new Fonoster.Voice();
+const messagingClient =  new SMSManager();
+const voiceClient = new CallManager();
 
 export async function sendSMS(to, message) {
   try {
