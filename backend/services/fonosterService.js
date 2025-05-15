@@ -1,9 +1,9 @@
 import dotenv from "dotenv";
-import { SMSManager, CallManager } from "@fonoster/sdk";
+import Fonoster from "@fonoster/sdk";
 dotenv.config();
 
-const messagingClient =  new SMSManager();
-const voiceClient = new CallManager();
+const messagingClient =  new Fonoster.SMS();
+const voiceClient =  new Fonoster.Call(); 
 
 export async function sendSMS(to, message) {
   try {
